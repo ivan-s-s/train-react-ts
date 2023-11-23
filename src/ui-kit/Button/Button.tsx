@@ -19,14 +19,17 @@ export const Button: React.FC<IButtonProps> = ({
   onClick,
   ...rest
 }) => {
-  return <button className={classNames("Button", className, {
-    "Button__disabled": isDisabled,
-  })}
-    disabled={isDisabled}
-    type={typeButton}
-    onClick={onClick}
-    {...rest}
-  >
-    <span>{children}</span>
-  </button>;
+  return (
+    <button
+      className={classNames("Button", className, {
+        Button__disabled: isDisabled,
+      })}
+      disabled={isDisabled}
+      type={typeButton}
+      onClick={onClick}
+      {...rest}
+    >
+      <span>{children}</span>
+    </button>
+  );
 };

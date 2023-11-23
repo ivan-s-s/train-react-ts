@@ -1,20 +1,23 @@
-import React from "react";
+import type { FC } from "react";
 import { Layout } from "components";
-import { Button } from "ui-kit";
+import "./App.scss"
+import { Routes, Route } from "react-router-dom";
+import { ROUTES } from "routes";
+import { ButtonPage, HomePage } from "pages";
 
-export const App: React.FC = () => {
-  const handleButtonClick = (event: React.MouseEvent) => {
-    console.log("[button click event]", event);
-  }
+export const App: FC = () => {
+  
 
   return (
     <div className="App">
+
       <Layout>
-        <h1>React TypeScript</h1>
-        <hr />
-        <h2>Button</h2>
-        <Button isDisabled={false} onClick={handleButtonClick}>Send</Button>
+        <Routes>
+          <Route path={ROUTES.HOME} element={<HomePage />}/>
+          <Route path={ROUTES.BUTTON} element={<ButtonPage />}/>
+        </Routes>
       </Layout>
     </div>
   );
 };
+
