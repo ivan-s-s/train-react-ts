@@ -3,5 +3,56 @@
 .MenuPanel {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
-  background-color: red;
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid $color-light-gray;
+  overflow-y: auto;
+  z-index: 3;
+
+  &-Brand {
+    position: relative;
+    border-bottom: 1px solid $color-light-gray;
+
+    &Title {
+      margin: 15px 0 8px 15px;
+
+      &Link {
+        color: $color-suit-gray;
+
+        &:hover {
+          color: $color-text;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &Version {
+      margin: 0 0 8px 15px;
+      color: $color-suit-gray;
+    }
+  }
+
+  &-Title {
+    padding: 15px;
+  }
+
+  &-List {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-ListItem {
+    padding: 8px 15px;
+    width: 100%;
+    cursor: pointer;
+
+    &__active {
+      color: $color-primary;
+    }
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
 }

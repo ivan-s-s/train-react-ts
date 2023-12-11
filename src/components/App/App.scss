@@ -27,7 +27,8 @@ body {
   overflow-x: hidden;
 }
 
-#root, #root > div {
+#root,
+#root > div {
   height: 100%;
 }
 

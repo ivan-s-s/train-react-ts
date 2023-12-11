@@ -19,5 +19,5 @@ export const ButtonPage: FC = () => {
       </Button>
       <hr />
     </section>
-  )
-}
+  );
+};

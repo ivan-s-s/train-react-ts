@@ -16,5 +16,5 @@ export const HomePage: FC = () => {
         Send
       </Button>
     </section>
-  )
-}
+  );
+};

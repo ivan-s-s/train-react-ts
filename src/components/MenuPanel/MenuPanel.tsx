@@ -14,13 +14,26 @@ export const MenuPanel: FC = () => {
       <div className="MenuPanel-List">
         <NavLink
           className={({ isActive }) =>
-            isActive ? "MenuPanel-ListItem MenuPanel-ListItem__active" : "MenuPanel-ListItem"
+            isActive
+              ? "MenuPanel-ListItem MenuPanel-ListItem__active"
+              : "MenuPanel-ListItem"
           }
           to={ROUTES.BUTTON}
         >
           Button
         </NavLink>
+        
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "MenuPanel-ListItem MenuPanel-ListItem__active"
+              : "MenuPanel-ListItem"
+          }
+          to={ROUTES.ICON}
+        >
+          Icon
+        </NavLink>
       </div>
     </nav>
-  )
-}
+  );
+};
