@@ -22,7 +22,7 @@ export const MenuPanel: FC = () => {
         >
           Button
         </NavLink>
-        
+
         <NavLink
           className={({ isActive }) =>
             isActive

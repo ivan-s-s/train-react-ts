@@ -15,6 +15,6 @@ type Story = StoryObj<typeof meta>;
 /* Base button */
 export const Base: Story = {
   args: {
-    type: "Pdf"
+    type: "Pdf",
   },
 };
