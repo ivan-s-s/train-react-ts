@@ -1,5 +1,6 @@
 export const ROUTES = {
-  HOME: "/",
-  BUTTON: "button",
+  ACCORDION: "/accordion/",
+  BUTTON: "/button/",
   ICON: "/icon/",
+  HOME: "/",
 };
